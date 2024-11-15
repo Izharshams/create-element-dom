@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 330px;
+            height: 30px;
+            text-align: center;
+            margin: auto;
+        }
+        button{
+            width: 100px;
+        }
+        .box{
+            border: 2px solid red;
+            padding: 20px;
+            display: inline-block;
+            margin: 5px;
+        }
+        .box:hover{
+         background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="userInput"placeholder="write the text  and it will generate a new box">
+    <br>
+    <br>
+    <button onclick="createBox()">Add</button>
+    <div id="container"></div>
+    
+    <script>
+       
+        // function createBox() {
+        //     let userInput = document.getElementById("userInput").value; 
+        //      console.log(userInput);
+        //    let box = document.createElement("div");
+        //    box.className = "box";
+        //    box.textContent = userInput;
+        //    let boxContainer = document.getElementById("container").appendChild(box);
+
+        // }
+        // function createBox() {
+        //     let userInput = document.getElementById("userInput").value;
+        //     console.log(userInput);
+        //     let box = document.createElement("div");
+        //     box.className = "box"
+        //     box.textContent = userInput;
+        //     let boxContainer =  document.getElementById("container").appendChild(box)
+        // }
+        // 
+        function createBox() {
+            let userInput = document.getElementById("userInput").value;
+            let box = document.createElement("div");
+            box.className = "box";
+            box.textContent = userInput;
+            let boxContainer = document.getElementById("container").appendChild(box);
+        }
+    
+
+    </script>
+</body>
+</html>
